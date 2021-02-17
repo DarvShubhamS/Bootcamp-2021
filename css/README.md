@@ -4,7 +4,7 @@
 
 <img src="https://github.com/DarvShubhamS/Bootcamp-2020/blob/master/css/screenshots/exercise_sample.JPG" />
 
-#### We Have Perform Following on Above Design:-
+#### We Have to Perform Following on Above Design:-
 
 * Font Properties:
   **Apply font properties (font-family, font-weight, font-size etc) on the given text.**
