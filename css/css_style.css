@@ -1,0 +1,110 @@
+
+/* different font properties */
+
+.font_propery p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:salmon;
+    line-height: 1em;
+
+}
+
+
+/* different background properties */
+
+.background_properties {
+    color: white;
+    background-image: url("https://i.pinimg.com/originals/d3/2f/a4/d32fa422fbbeb1d4663c01b037fddd81.jpg");
+    background-repeat: no-repeat;
+    background-position:inherit;
+    background-size:cover;
+   
+}
+
+
+/* different psudo class properties */
+
+.psudo_classes ul li:first-child{
+ color: yellow;
+ background-color:crimson;
+}
+
+.psudo_classes ul li:last-child{
+    color: green;
+    background-color:cyan;
+}
+
+.psudo_classes ul li::after{
+  content: "- added using after css";
+   }
+
+.psudo_classes ul li::before{
+    content: "added using before css -";
+}
+  
+
+.psudo_classes ul li:hover{
+   color: blueviolet;
+   font-weight: bold;
+}
+
+.psudo_classes ul li::marker{
+    color: darkcyan;
+    
+ }
+
+ .psudo_classes ul li::first-letter{
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    
+ }
+
+
+
+
+/* different combinators */
+
+.combinator p{
+background-color: royalblue;
+}
+
+.combinator > p {
+    color: white;
+}
+
+.combinator div + p {
+  color: aquamarine;
+}
+
+.combinator div ~ p {
+    font-weight: bold;
+
+}
+
+.combinator div ~ p:hover {
+    font-size: 20px;
+    
+}
+
+/* different input selector */
+
+.att_selector form input[type="text"] {
+    background: brown;
+}
+
+.att_selector form input[type="text"]:focus {
+    background: white;
+}
+
+.att_selector form input[type="number"] {
+    background: burlywood;
+}
+
+.att_selector form input[type="email"] {
+    background: chocolate;
+}
+
+
+  
