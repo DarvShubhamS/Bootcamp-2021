@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_container">
+        <section class="first_container">
+
+            <header class="set-width">
+                <nav>
+                    <div class="main_nav">
+                        <h3>Responsive Layout</h3>
+
+                        <img id="side_bar" src="assets/icon.png" onclick="side_open()" alt="sidebar">
+
+
+                        <ul>
+                            <li><a href="/home"> Home</a></li>
+                            <li><a href="/generic">Generic</a> </li>
+                            <li><a href="/elements">Elements</a> </li>
+                        </ul>
+                        <aside id="sidebar">
+                            <div class="sidebar">
+                                <button onclick="side_close()" id="close">x</button>
+                                <a href="/home">Home</a>
+                                <hr>
+                                <a href="/generic">Generic</a>
+                                <hr>
+                                <a href="/elements">Elements</a>
+                            </div>
+                        </aside>
+                    </div>
+
+
+
+                </nav>
+
+
+
+                <hr>
+            </header>
+
+
+
+
+            <div class="main_welcome set-width">
+                <h1>Welcome</h1><br><br>
+                <div class="primary_image_content_wrapper">
+                    <img src="assets/taxi.png" alt="taxi">
+                    <a href="/travel">
+                        <h4>Travel</h4>
+                        <br>
+                        <span>Choose a Ride</span>
+                    </a>
+
+                </div>
+                <div class="primary_image_content_wrapper line">
+                    <img src="assets/camera.png" alt="taxi">
+                    <a href="/gallery">
+                        <h4>Gallery</h4>
+                        <br>
+                        <span>Choose photos</span>
+                    </a>
+
+                </div>
+                <br>
+                <button id="get_started">
+                    Get Started
+                </button>
+            </div>
+
+        </section>
+        <section class="seconday_conatiner set-width">
+            <div class="secondary_image_content_wrapper">
+                <img src="assets/iphone.jpg" alt="iphone">
+                <h2>Lorem ipsum dolor <br> amet nulam</h2><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Deleniti minima voluptatem, voluptatum
+                    architecto doloremque aliquam cupiditate veniam illo dolorem quisquam. <br> Ullam, animi similique
+                    distinctio expedita optio fuga nisi minus laudantium!
+                </p>
+                <br>
+                <button>
+                    Learn More
+                </button>
+            </div>
+            <div class="secondary_image_content_wrapper">
+                <img src="assets/camera.jpg" alt="iphone">
+                <h2>Lorem ipsum <br> dolor amet nulam</h2><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Deleniti minima voluptatem, voluptatum
+                    architecto doloremque aliquam cupiditate veniam illo dolorem quisquam. <br> Ullam, animi similique
+                    distinctio expedita optio fuga nisi minus laudantium!
+                </p>
+                <br>
+                <button>
+                    Learn More
+                </button>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+    <script>
+        const side_open = () => {
+            document.getElementById("side_bar").style.opacity = "0"
+            document.getElementById("sidebar").style.display = "block"
+        }
+
+        const side_close = () => {
+            document.getElementById("sidebar").style.display = "none"
+            document.getElementById("side_bar").style.opacity = "1"
+
+        }
+
+    </script>
+
+</body>
+
+</html>
