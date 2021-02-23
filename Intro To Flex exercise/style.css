@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.main-container {
+    width: 100vw;
+}
+
+.main_top_conatiner {
+   
+    text-align: center;
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0,0.7),rgba(89, 89, 104,0.9)),url(assets/main_banner.png) no-repeat center center/cover;
+    height: 60vh;
+    max-width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+
+    
+}
+
+
+.main_top_conatiner h1{
+ font-size: 3.5rem;
+}
+
+.main_top_conatiner p{
+    font-size: 1.2rem;
+}
+
+
+.main_middle_container {
+   
+   margin: 0 auto;
+  
+}
+
+.content_wrapper:last-child {
+    background: #4c98dc;
+    color: white;
+   
+    
+}
+
+.content_wrapper:first-child p{
+ color: gray;
+}
+
+.content_wrapper img  {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+   
+}
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding: 5rem;
+    height: auto;
+    
+}
+
+.testimonials {
+    text-align: center;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+    
+}
+
+.testimonial_content {
+    padding: 2rem;
+}
+
+.testimonials p {
+    color: gray;
+}
+
+.testimonials img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonials_container {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    
+   
+}
+
+.testimonials_container p {
+    text-align:center;
+}
+
+footer{
+    color: gray;
+    margin: 0 auto;
+    text-align: center;
+    padding: 2px;
+    padding-bottom: 40px;
+}
+
+.social_icons img{
+    height: 2.5rem;
+    border:1px solid gray;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+ 
+}
+
+
+
+
+.bttn_style {
+    color: white;
+    background: #4c98dc;
+    border:1px solid #4c98dc;
+    padding: 10px;
+    width: 8rem;
+}
+
+#bttn_style_2 {
+    color: #4c98dc;
+    background:white;
+    border:1px solid white;
+    padding: 10px;
+    width: 8rem;
+}
+
+
+@media(min-width:2000px) and (max-width:3200px)
+{
+    body {
+        font-size: 50px;
+    }
+
+    .main_top_conatiner h1{
+        font-size: 6.5rem;
+       }
+
+       .main_top_conatiner p{
+        font-size: 2.2rem;
+    }
+
+
+    .bttn_style,#bttn_style_2{
+        width: auto;
+    }
+    
+    button{
+        font-size: 2rem;
+    }
+    
+
+    
+}
+
+
+@media(min-width:1999px) and (max-width:1321px)
+{
+    body{
+        font-size: 50px;
+    }
+
+    .main_top_conatiner h1{
+        font-size: 6.5rem;
+       }
+
+       .main_top_conatiner p{
+        font-size: 2.2rem;
+    }
+}
+
+
+@media(max-width:1320px){
+
+    body {
+        font-size: 28px;
+    }
+    .testimonials_container {
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .testimonial_content {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media(min-width:1200px) {
+    body {
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+
+@media(max-width:1331px) {
+    body {
+        font-size: 17px;
+    }
+   
+
+    .content_wrapper {
+        flex-wrap: wrap;
+        margin: 0 auto;
+        
+       
+        
+    }
+
+
+    #item_2 {
+        order: -1;
+    }
+
+    .content_wrapper h1 {
+        
+        text-align: center;
+    }
+
+    .content_wrapper p {
+        text-align:left;
+    }
+
+
+
+    .content_wrapper img  {
+        margin: 0 auto;
+    }
+
+  .content {
+      margin: 20px 0;
+    }
+
+  .main_top_conatiner p{
+     padding: 20px;
+
+    }
+
+
+    .testimonials {
+        padding: 20px;
+    }
+
+  
+
+
+
+    
+}
+
+
+@media(max-width:1024px)
+{
+    body {
+        font-size: 28px;
+    }
+}
+
+
+@media(max-width:768px)
+{
+    body {
+        font-size: 23px;
+    }
+}
+
+
+@media(max-width:360px)
+{
+
+    body {
+        font-size: 20px;
+    }
+    .main_top_conatiner{
+        padding: 12px;
+    }
+
+    .testimonials {
+        padding: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
