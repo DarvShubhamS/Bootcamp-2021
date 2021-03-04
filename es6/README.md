@@ -54,7 +54,7 @@ Code:-
   
   <img src="https://github.com/DarvShubhamS/Bootcamp-2021/blob/master/es6/screenshots/ss3.JPG" />
   
-  #### Extract all keys inside address object from user object using destructuring ?
+  #### Q4. Extract all keys inside address object from user object using destructuring ?
 
 ####   const user = { firstName: ‘Sahil’, lastName: ‘Dua’, Address: { Line1: ‘address line 1’, Line2: ‘address line 2’, State: ‘Delhi’, Pin: 110085, Country: ‘India’, City: ‘New Delhi’, }, phoneNo: 9999999999 }
 
