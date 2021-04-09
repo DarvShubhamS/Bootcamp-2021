@@ -1,0 +1,365 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header>
+
+        <nav class="nav">
+            <div class="container-fluid d-flex justify-content-between set-width flex-wrap">
+                <div>
+                    <h3>SAILOR</h3>
+                </div>
+                <div>
+                    <ul class="nav">
+                        <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">About</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="">Link 1</a>
+                                <a class="dropdown-item" href="">Link 2</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button class="btn btn-danger">Get Started</button>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+    </header>
+
+    <section class="section_carsoule">
+        <div id="mycarousel" class="carousel slide">
+
+            <!-- creating indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#one" data-slide-to="0" class="active"></li>
+                <li data-target="#two" data-slide-to="1"></li>
+                <li data-target="#three" data-slide-to="2" class="active"></li>
+            </ol>
+
+
+            <!-- creating images inside carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="./assets/slide/slide-1.jpg" alt="">
+                    <div class="carousel-caption d-flex align-item-center">
+                        <h2>Sequi ea ut est quaerat</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi vitae, corrupti
+                            incidunt,
+                            nesciunt culpa cupiditate molestias quis recusandae fuga ipsam architecto, magnam ab quod
+                            libero
+                            excepturi quos voluptas perspiciatis.</p>
+                        <button class="btn btn-danger">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/slide/slide-2.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Sequi ea ut est quaerat</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi vitae, corrupti
+                            incidunt,
+                            nesciunt culpa cupiditate molestias quis recusandae fuga ipsam architecto, magnam ab quod
+                            libero
+                            excepturi quos voluptas perspiciatis.</p>
+                        <button class="btn btn-danger">Read More</button>
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="./assets/slide/slide-3.jpg" alt="">
+                    <div class="carousel-caption">
+                        <h2>Sequi ea ut est quaerat</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius commodi vitae, corrupti
+                            incidunt,
+                            nesciunt culpa cupiditate molestias quis recusandae fuga ipsam architecto, magnam ab quod
+                            libero
+                            excepturi quos voluptas perspiciatis.</p>
+                        <button class="btn btn-danger">Read More</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- creating controls -->
+            <a class="carousel-control-prev" href="#mycarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#mycarousel" data-slide="prev">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="features_section">
+        <div class="container-flex set-width">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>EUM IPSAM LABORUM DELENITI VELITENA</h1>
+                    <h5>
+                        Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave
+                    </h5>
+                </div>
+                <div class="col-md-6 features">
+                    <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+                    <ul>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit</li>
+                        <li>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute</li>
+                    </ul>
+                    <p>
+                        irure dolor in reprehenderit in Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_partners">
+        <div class="container-fluid">
+            <div class="row set-width d-flex flex-wrap justify-content-between">
+                <div class="col-md-2">
+                    <img src="./assets/clients/client-1.png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/clients/client-2.png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/clients/client-3.png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/clients/client-4.png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/clients/client-5.png" alt="">
+                </div>
+                <div class="col-md-2">
+                    <img src="./assets/clients/client-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services_section">
+        <div class="container-flex set-width">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-6 d-flex service_content">
+                    <div class="service_image">
+                        <img src="./assets/breifcase.JPG" alt="">
+                    </div>
+                    <div class="service_data">
+                        <h4>Lorem Ipsum</h4>
+                        <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident</p>
+                    </div>
+                </div>
+                <div class="spacing"></div>
+                <div class="col-md-6 d-flex service_content">
+                    <div class="service_image">
+                        <img src="./assets/task.JPG" alt="">
+                    </div>
+                    <div class="service_data">
+                        <h4>Dolor Sitema</h4>
+                        <p>Minim venlam, quis nostrud exercitation ullamco laboris nisi ut allquip ex ea commodo
+                            consequat tarad limino ata</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 d-flex service_content">
+                    <div class="service_image">
+                        <img src="./assets/graph.JPG" alt="">
+                    </div>
+                    <div class="service_data">
+                        <h4>Sed ut perspiciatis</h4>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur</p>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 d-flex service_content">
+                    <div class="service_image">
+                        <img src="./assets/bino.JPG" alt="">
+                    </div>
+                    <div class="service_data">
+                        <h4>
+                            Nemo Enim
+                        </h4>
+                        <p>
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qul officia deserunt molit
+                            anim id est laborum
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 d-flex service_content">
+                    <div class="service_image">
+                        <img src="./assets/sun.JPG" alt="">
+                    </div>
+                    <div class="service_data">
+                        <h4>Magni Dolore</h4>
+                        <p>At vero eos et accusamus et lusto odio dignissimos ducimu blanditiis praesentium voluptatum
+                            deleniti atque</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 d-flex service_content">
+                    <div class="service_image">
+                        <img src="./assets/calender.JPG" alt="">
+                    </div>
+                    <div class="service_data">
+                        <h4>Eiusmod Tempor</h4>
+                        <p>Et harum quo rerum facilis est et expedita distinctio. Nam soluta nobis est eligendi
+                            ibero tempo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="secondary_nav">
+        <div class="container-fluid">
+            <ul class="nav nav-pills d-flex justify-content-center">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-toggle="pill">ALL</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">APP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CARD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">WEB</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section_gallery">
+        <div class="container-fluid set-width">
+            <div class="row">
+                <div class="col-md-4 gallery">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-1.jpg" alt="">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-6.jpg" alt="">
+                </div>
+
+                <div class="col-md-4 gallery">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-2.jpg" alt="">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-5.jpg" alt="">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-9.jpg" alt="">
+                </div>
+
+                <div class="col-md-4 gallery">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-3.jpg" alt="">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-4.jpg" alt="">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-7.jpg" alt="">
+                    <img class="img-fluid" src="./assets/portfolio/portfolio-8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid footer_section_1">
+            <div class="row set-width">
+                <div class="col-md-3 d-flex flex-column">
+                    <h4>Sailor</h4>
+                    <p>A108 Adam Street <br>NY 535022</p>
+                    <span><b>Phone:</b> +1 5589 55488 55</span>
+                    <span><b>Email:</b> info@example.com</span>
+                    <div class="">
+                        <img src="./assets/social/twitter.png" alt="">
+                        <img src="./assets/social/facebook.png" alt="">
+                        <img src="./assets/social/instagram.png" alt="">
+                        <img src="./assets/social/google_plus.png" alt="">
+                        <img src="./assets/social/linkedin.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4>Useful Links</h4>
+                    <ul class="nav d-flex flex-column">
+                        <li><a class="nav-link" href="">Home</a></li>
+                        <li><a class="nav-link" href="">About us</a></li>
+                        <li><a class="nav-link" href="">Services</a></li>
+                        <li><a class="nav-link" href="">Terms of service</a></li>
+                        <li><a class="nav-link" href="">privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Our Services</h4>
+                    <ul class="nav d-flex flex-column">
+                        <li><a class="nav-link" href="">Web Design</a></li>
+                        <li><a class="nav-link" href="">Web Developemnt</a></li>
+                        <li><a class="nav-link" href="">Product Management</a></li>
+                        <li><a class="nav-link" href="">Marketing</a></li>
+                        <li><a class="nav-link" href="">Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4>Our Newsletter</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <input type="text">
+                    <button class="btn btn-danger">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid footer_section_2">
+            <div class="row">
+                <div class="col-md-11 d-flex justify-content-center">
+                    &copy; Copyright Sailor All Rights Reserved
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-danger" style="float: right;">↑</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

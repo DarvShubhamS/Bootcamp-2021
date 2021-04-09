@@ -1,0 +1,164 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    padding:20px
+}
+
+header a {
+    color: black;
+}
+
+.set-width {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    height: 95vh;
+
+}
+
+.carousel-item img {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    
+}
+
+.carousel-caption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    height: 100%;
+    right: 0%;
+    left: 0%;
+}
+
+.features_section {
+    padding: 20px;
+}
+
+.features ul li {
+    list-style: none;
+}
+
+.features ul li::before {
+    content: url('/assets/tick.JPG');
+    vertical-align:middle;
+    margin-right: 2px;
+}
+
+.section_partners {
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.section_partners img {
+    width: 100px;
+}
+
+.services_section {
+    padding:40px
+}
+
+.service_image {
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.service_data {
+    background: #f8f9fa;
+    padding: 20px;
+}
+
+.service_content {
+    padding:20px;
+}
+
+.secondary_nav {
+    margin: 20px 0 20px 0;;
+}
+
+.secondary_nav a {
+    color: black;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #C82333;
+}
+
+.gallery img {
+    margin-bottom: 20px;
+}
+footer {
+    color: white;
+}
+
+.footer_section_1 {
+    background: #515d6a;
+    padding: 15px;
+}
+.footer_section_1 img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 4px;
+    height: 40px;
+    width: 40px;
+}
+
+.footer_section_1 a {
+    color:#adb1b6;
+}
+
+.footer_section_1 input {
+    height: 35;
+    vertical-align: middle;
+} 
+
+.footer_section_1 a::before {
+    content: "> ";
+}
+
+.footer_section_2 {
+    padding: 20px;
+    background: #4a5562;
+}
+
+
+
+@media (max-width:768px) {
+
+    .carousel-inner {
+        height: 100%;
+    }
+    .section_partners {
+        text-align: center;
+    }
+
+    .set-width {
+        width: 100%;
+    }
+
+    .section_partners img {
+        width: 100px;
+    }
+}
+
+@media (max-width:360px)
+{
+    .carousel-caption {
+        bottom:10%
+    }
+}
