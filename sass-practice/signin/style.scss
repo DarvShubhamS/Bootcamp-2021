@@ -154,3 +154,9 @@ footer {
         font-size: 14px;
     }
 }
+
+@media (max-width:1366px) {
+    .form-container {
+        width: 30%;
+    }
+}
