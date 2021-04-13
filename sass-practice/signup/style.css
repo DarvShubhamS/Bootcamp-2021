@@ -1,3 +1,177 @@
+button {
+  background-color: #1a73e8;
+  border: 1px solid #1a73e8;
+  padding: 10px;
+  color: whitesmoke;
+  width: 90px;
+  border-radius: 5px;
+}
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+footer .footer-links ul a, .form-container .form-content-container .left-section .form-email-control-group a, .form-container .form-content-container .left-section .submit-button-container a {
+  color: #1a73e8;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #DADCE0;
+  padding: 48px;
+}
+.form-container .form-content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form-container .form-content-container .left-section {
+  width: 50%;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+.form-container .form-content-container .left-section form {
+  margin-top: 30px;
+}
+.form-container .form-content-container .left-section form input {
+  margin-top: 24px;
+  border: 1px solid #DADCE0;
+}
+.form-container .form-content-container .left-section .submit-button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 50px;
+}
+.form-container .form-content-container .left-section .form-header-container img {
+  width: 75px;
+  height: 24px;
+}
+.form-container .form-content-container .left-section .form-input-control-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.form-container .form-content-container .left-section .form-input-control-group input {
+  width: 49%;
+  padding: 10px;
+}
+.form-container .form-content-container .left-section .form-input-control-group #inpt1, .form-container .form-content-container .left-section .form-input-control-group #inpt2 {
+  margin-top: 0px;
+}
+.form-container .form-content-container .left-section .form-email-control-group #email_span {
+  margin-left: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  font: 400 12px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.form-container .form-content-container .left-section .form-email-control-group a {
+  display: block;
+  margin-top: 20px;
+}
+.form-container .form-content-container .left-section .form-email-control-group .email-control {
+  border: 1px solid #DADCE0;
+  width: 100%;
+  padding: 8px;
+  margin-top: 24px;
+}
+.form-container .form-content-container .left-section .form-email-control-group .email-control input {
+  border: none;
+  width: 70%;
+  height: 100%;
+  margin-top: 0px;
+}
+.form-container .form-content-container .left-section .form-email-control-group .email-control span {
+  width: 30%;
+  font-size: 14px;
+}
+.form-container .form-content-container .left-section .form-password-control-group span {
+  margin-left: 5px;
+  display: inline-block;
+  margin-top: 5px;
+  font: 400 12px Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+.form-container .form-content-container .left-section .form-checkbox-control-group {
+  font-size: 14px;
+  margin-top: 10px;
+}
+.form-container .form-content-container .left-section .form-checkbox-control-group #show_pass {
+  zoom: 1.4;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+.form-container .form-content-container .left-section h1 {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #202124;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+.form-container .form-content-container .right-section {
+  width: 45%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+  flex-direction: column;
+}
+.form-container .form-content-container .right-section img {
+  height: 180px;
+  width: 60%;
+  margin: 0 auto;
+}
+.form-container .form-content-container .right-section h2 {
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+footer {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+footer label {
+  font-size: 14px;
+}
+footer .footer-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+footer .footer-links ul li {
+  margin-right: 10px;
+}
+footer .footer-links ul a {
+  color: black;
+}
+footer #language {
+  border: none;
+}
 
 /*# sourceMappingURL=style.css.map */
