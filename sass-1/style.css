@@ -115,7 +115,7 @@ nav button {
   margin: 0 auto;
 }
 .about .left-section {
-  width: 60%;
+  width: 70%;
 }
 .about .left-section img {
   width: 100%;
@@ -123,7 +123,7 @@ nav button {
 }
 .about .right-section {
   background-color: white;
-  width: 40%;
+  width: 30%;
 }
 .about .right-section h2 {
   padding: 20px;
@@ -142,7 +142,7 @@ nav button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100px;
+  height: 250px;
   padding: 20px;
 }
 .about p {
@@ -167,14 +167,17 @@ nav button {
 .feature_cards .card-1 {
   background-color: #037EBA;
   padding: 40px;
+  flex-basis: 25%;
 }
 .feature_cards .card-2 {
   background-color: #A0AF46;
   padding: 40px;
+  flex-basis: 25%;
 }
 .feature_cards .card-3 {
   background-color: #F88244;
   padding: 40px;
+  flex-basis: 25%;
 }
 
 .projects {
@@ -374,7 +377,8 @@ footer {
   flex-wrap: wrap;
 }
 .footer-container .footer-top-section li::before {
-  content: "> ";
+  content: ">";
+  margin-right: 8px;
 }
 .footer-container .footer-lower-section {
   display: flex;
@@ -445,6 +449,9 @@ footer {
 
   .feature_cards {
     flex-wrap: wrap;
+  }
+  .feature_cards .card-1, .feature_cards .card-2, .feature_cards .card-3 {
+    flex-basis: auto;
   }
 
   .about .left-section, .about .right-section {
