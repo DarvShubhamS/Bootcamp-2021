@@ -1,0 +1,215 @@
+@import "../button";
+@import "../base-style";
+
+$set-equal-width : 50%;
+
+
+@mixin set-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin set-width {
+    width: 40%;
+    margin: 0 auto;
+}
+
+@mixin set-font-wight {
+    font-weight: lighter;
+}
+
+@mixin set-span {
+    margin-left: 5px;
+    display:inline-block;
+    margin-top: 5px;
+    font: 400 12px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+%set-anchor-style {
+    color: $base-font-color-link;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+    @include set-width();
+    border-radius:5px;
+    border: 1px solid $border-base;
+    padding: 48px;
+
+    .form-content-container {
+        @include set-flex();
+    
+
+    .left-section {
+        width: 50%;
+        font-family: $font-family-styles;
+        form {
+            margin-top: 30px;
+            input {
+                margin-top: 24px;
+                border: 1px solid $border-base;
+            }
+        }
+
+        .submit-button-container {
+            @include set-flex();
+            padding-top: 50px;
+            a {
+                @extend %set-anchor-style;
+            }
+        }
+
+        .form-header-container {
+            img {
+                width: 75px;
+                height: 24px;
+                
+            }
+        }
+
+        .form-input-control-group {
+            @include set-flex();
+
+            input {
+                width: 49%;
+                padding:10px;
+            }
+
+            #inpt1,#inpt2 {
+               margin-top: 0px
+            }
+        }
+
+
+        .form-email-control-group {
+            #email_span {
+                @include set-span();
+            }
+
+            a {
+                @extend %set-anchor-style;
+                display: block;
+                margin-top: 20px
+            }
+
+            .email-control {
+                border: 1px solid $border-base;
+                width: 100%;
+                padding: 8px;
+                margin-top: 24px;
+                input {
+                    border: none;
+                    width: 70%;
+                    height: 100%;
+                    margin-top: 0px;
+                }
+    
+                span {
+                    width: 30%;
+                    font-size: 14px;
+                }
+
+
+            }
+          
+        }
+
+
+        .form-password-control-group {
+            span {
+               @include set-span();
+            }
+        }
+
+        .form-checkbox-control-group  {
+            font-size: 14px;
+            margin-top: 10px;
+            #show_pass {
+                zoom: 1.4;
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-top:0px;
+            }
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-top: 10px;
+            font-weight: 400;
+            color: $base-font-color;
+            font-family: $font-family-styles;
+        }
+        
+    }
+    
+    .right-section {
+        width: 45%;
+        text-align: center;
+        @include set-flex();
+        font-family: $font-family-styles;
+        flex-direction: column;
+        img {
+            height: 180px;
+            width: 60%;
+            margin: 0 auto;
+            
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 16px;
+            margin-top: 40px;
+        }
+    }
+}
+
+}
+
+
+footer {
+    @include set-width();
+    @include set-flex();
+    margin-top: 40px;
+
+    label {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        ul {
+            @include set-flex();
+            list-style: none;
+            li {
+                margin-right: 10px;
+            }
+
+            a {
+                @extend %set-anchor-style;
+                color: black;
+            }
+        }
+    }
+
+    #language {
+        border: none;
+    }
+}
+
+

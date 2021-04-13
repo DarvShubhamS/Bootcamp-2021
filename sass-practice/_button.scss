@@ -1,0 +1,11 @@
+$button-bg :#1a73e8;
+
+button {
+    background-color: $button-bg;
+    border: 1px solid $button-bg;
+    padding: 10px;
+    color: whitesmoke;
+    width: 90px;
+    border-radius: 5px;
+
+}

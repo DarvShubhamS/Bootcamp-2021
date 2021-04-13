@@ -1,0 +1,156 @@
+@import "../button";
+@import "../base-style";
+
+
+
+@mixin set-wdth {
+    width: 25%;
+    margin:0 auto;
+}
+
+@mixin set-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin set-border-radius {
+    border-radius: 5px;
+}
+
+@mixin set-font-weight-lighter {
+    font-weight: lighter;
+}
+
+
+%set-anchor-style {
+    color: $base-font-color-link;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: $font-family-styles;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-container {
+    font-family:$font-family-styles-second;
+    border: {
+        style:solid;
+        width: thin;
+        color: $border-base;
+    }
+    padding: 50px;
+    @include set-wdth();
+    @include set-border-radius();
+    text-align: center;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 400;
+        margin: {
+            top: 20px;
+            bottom: 10px;
+        }
+    }
+
+    h3 {
+        @include set-font-weight-lighter();
+    }
+
+    img {
+        width: 74px;
+        height: 24px
+    }
+
+    a {
+        @extend %set-anchor-style;
+        margin-top: 10px;
+       
+    }
+
+    span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .input-container {
+        text-align: justify;
+        margin: {
+            top: 40px;
+            bottom:40px
+        }
+
+        input {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid $border-base;
+            @include set-border-radius();
+            margin-bottom: 10px;
+        }
+
+        a {
+            margin-top: 10px;
+        }
+    }
+
+    .learn-more-section {
+        text-align: justify;
+        font-family: $font-family-styles;
+        p {
+            font-style: 14px;
+        }
+      
+    }
+
+
+    .submit-control {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+   
+}
+
+
+footer {
+    @include set-wdth();
+    @include set-flex();
+    margin-top: 40px;
+
+    #language {
+        border: none;
+    }
+    .footer-links {
+        ul {
+            @include set-flex();
+            list-style: none;
+            li {
+                margin-right: 10px;
+            }
+
+            a {
+                @extend %set-anchor-style;
+                color: black;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    label {
+        font-size: 14px;
+    }
+}

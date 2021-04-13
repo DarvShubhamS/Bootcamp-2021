@@ -1,0 +1,120 @@
+button {
+  background-color: #1a73e8;
+  border: 1px solid #1a73e8;
+  padding: 10px;
+  color: whitesmoke;
+  width: 90px;
+  border-radius: 5px;
+}
+
+footer .footer-links ul a, .form-container a {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+  border-style: solid;
+  border-width: thin;
+  border-color: #DADCE0;
+  padding: 50px;
+  width: 25%;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+}
+.form-container h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.form-container h3 {
+  font-weight: lighter;
+}
+.form-container img {
+  width: 74px;
+  height: 24px;
+}
+.form-container a {
+  margin-top: 10px;
+}
+.form-container span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-container .input-container {
+  text-align: justify;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.form-container .input-container input {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #DADCE0;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.form-container .input-container a {
+  margin-top: 10px;
+}
+.form-container .learn-more-section {
+  text-align: justify;
+  font-family: roboto, "Noto Sans Myanmar UI", arial, sans-serif;
+}
+.form-container .learn-more-section p {
+  font-style: 14px;
+}
+.form-container .submit-control {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+footer {
+  width: 25%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+footer #language {
+  border: none;
+}
+footer .footer-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+}
+footer .footer-links ul li {
+  margin-right: 10px;
+}
+footer .footer-links ul a {
+  color: black;
+  margin-top: 10px;
+}
+footer label {
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=style.css.map */
