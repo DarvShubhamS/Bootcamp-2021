@@ -116,6 +116,7 @@ nav button {
 }
 .about .left-section {
   width: 70%;
+  height: 400px;
 }
 .about .left-section img {
   width: 100%;
@@ -124,6 +125,7 @@ nav button {
 .about .right-section {
   background-color: white;
   width: 30%;
+  height: 400px;
 }
 .about .right-section h2 {
   padding: 20px;
