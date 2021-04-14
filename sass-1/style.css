@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  border-bottom: 1px solid gray;
+  border: 1px solid #DADCE0;
   width: 100%;
   background-color: white;
 }
@@ -50,7 +50,7 @@ nav .right-section {
 }
 nav .right-section input, nav .right-section button {
   height: 55px;
-  border: 1px solid gray;
+  border: 1px solid #DADCE0;
   text-align: center;
 }
 nav .right-section button {
@@ -86,6 +86,7 @@ nav button {
   margin-bottom: 20px;
 }
 .services .left-section {
+  border: 1px solid #DADCE0;
   background: white;
   padding: 20px;
   width: 15%;
@@ -97,14 +98,13 @@ nav button {
   list-style: none;
 }
 .services .right-section ul li {
-  border-right: 1px solid gray;
+  border: 1px solid #DADCE0;
   background: white;
   padding: 20px;
   margin-bottom: 40px;
 }
 .services .right-section ul li:last-child {
   width: 30px;
-  border: none;
 }
 
 .about {
@@ -113,10 +113,11 @@ nav button {
   flex-wrap: wrap;
   width: 90%;
   margin: 0 auto;
+  border: 1px solid #DADCE0;
 }
 .about .left-section {
   width: 70%;
-  height: 400px;
+  height: 35vh;
 }
 .about .left-section img {
   width: 100%;
@@ -125,14 +126,14 @@ nav button {
 .about .right-section {
   background-color: white;
   width: 30%;
-  height: 400px;
+  height: 35vh;
 }
 .about .right-section h2 {
   padding: 20px;
   font-size: 2rem;
 }
 .about .right-section button {
-  margin-top: 10px;
+  margin-top: 50px;
   background-color: #037EBA;
   padding: 10px;
   width: 150px;
@@ -144,7 +145,7 @@ nav button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 250px;
+  height: auto;
   padding: 20px;
 }
 .about p {
@@ -169,16 +170,19 @@ nav button {
 .feature_cards .card-1 {
   background-color: #037EBA;
   padding: 40px;
+  border: 1px solid #DADCE0;
   flex-basis: 25%;
 }
 .feature_cards .card-2 {
   background-color: #A0AF46;
   padding: 40px;
+  border: 1px solid #DADCE0;
   flex-basis: 25%;
 }
 .feature_cards .card-3 {
   background-color: #F88244;
   padding: 40px;
+  border: 1px solid #DADCE0;
   flex-basis: 25%;
 }
 
@@ -187,6 +191,7 @@ nav button {
   padding: 1px;
   width: 90%;
   margin: 0 auto;
+  border: 1px solid #DADCE0;
   margin-bottom: 40px;
 }
 
@@ -295,6 +300,7 @@ nav button {
   width: 40%;
   text-align: center;
   background: white;
+  border: 1px solid #DADCE0;
 }
 .words .right-section h3 {
   color: black;
@@ -333,6 +339,7 @@ nav button {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  border: 1px solid #DADCE0;
   background: white;
   flex-wrap: nowrap;
 }
@@ -345,16 +352,17 @@ nav button {
 }
 
 footer {
-  background: #F4F4F4;
-  height: 300px;
+  background: #e7e7e7;
+  border-top: 1px solid #DADCE0;
+  margin-top: 20px;
+  height: auto;
 }
 
 .footer-container {
+  background: #e7e7e7;
   font-size: 1.2rem;
   width: 90%;
   margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
   padding: 5px;
   color: gray;
 }
@@ -378,6 +386,9 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.footer-container .footer-top-section .latest_news {
+  width: 40%;
+}
 .footer-container .footer-top-section li::before {
   content: ">";
   margin-right: 8px;
@@ -386,6 +397,8 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background: #e7e7e7;
+  margin-top: 10px;
 }
 .footer-container ul {
   list-style: none;
@@ -400,27 +413,58 @@ footer {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1445px) {
+  .about .right-section {
+    height: auto;
+  }
+  .about .left-section {
+    height: auto;
+  }
+
+  .projects_container .card_content button {
+    padding: 8px;
+  }
+}
 @media (max-width: 1389px) {
+  .services .left-section {
+    width: fit-content;
+  }
+  .services .right-section {
+    width: fit-content;
+  }
+}
+@media (max-width: 1313px) {
+  .services .left-section {
+    margin-bottom: 2px;
+  }
+  .services .right-section {
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 1136px) {
+  .services .left-section {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .services .right-section ul {
+    justify-content: center;
+  }
+}
+@media (max-width: 768px) {
   .services {
     display: block;
   }
-  .services .right-section, .services .left-section {
+  .services .right-section {
     height: auto;
-    margin: 0 auto;
-  }
-  .services .left-section {
-    width: 50%;
-    margin-bottom: 20px;
   }
   .services .right-section ul li {
     width: 100%;
-    border: none;
+    margin-bottom: 0px;
   }
   .services .right-section ul li:last-child {
     display: none;
   }
-}
-@media (max-width: 768px) {
+
   nav {
     height: auto;
     text-align: center;
@@ -473,6 +517,10 @@ footer {
   }
   .words .right-section {
     width: 100%;
+  }
+
+  .about .right-section {
+    height: auto;
   }
 }
 

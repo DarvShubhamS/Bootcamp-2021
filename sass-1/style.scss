@@ -1,6 +1,8 @@
 $base-color : #037EBA;
 $card-base-one : #A0AF46;
 $card-base-two : #F88244;
+$base-border-color : #DADCE0;
+$base-footer-color : #e7e7e7;
 
 
 @mixin set-flex {
@@ -45,6 +47,10 @@ $card-base-two : #F88244;
     text-decoration: none;
 }
 
+@mixin set-border {
+    border: 1px solid $base-border-color;
+}
+
 
 
 
@@ -58,7 +64,7 @@ body {
 }
 
 header {
-    border-bottom: 1px solid gray;
+    @include set-border();
     width: 100%;
     background-color: white;
 }
@@ -99,7 +105,7 @@ nav {
     
         input,button {
            height: 55px;
-           border: 1px solid gray;
+           @include set-border();
            text-align: center;
         }
     
@@ -141,6 +147,7 @@ nav {
     }
 
     .left-section {
+        @include set-border();
         background: white;
         padding: 20px;
         width: 15%;
@@ -152,13 +159,12 @@ nav {
 
         li {
             
-            border-right: 1px solid gray;
+            @include set-border();
             background: white;
             padding: 20px;
             margin-bottom: 40px;
             &:last-child {
             width: 30px;
-            border: none;
             }
         }
 
@@ -170,9 +176,10 @@ nav {
 .about {
    @include set-flex();
    @include set-width();
+   @include set-border();
    .left-section {
        width: 70%;
-       height: 400px;
+       height: 35vh;
        img {
          width: 100%;
          height: 100%;
@@ -182,14 +189,14 @@ nav {
    .right-section {
     background-color: white;
     width: 30%;
-    height: 400px;
+    height: 35vh;
     h2 {
         padding: 20px;
         font-size: 2rem;
     }
 
     button {
-        margin-top: 10px;
+        margin-top: 50px;
         @include button-style();
         
     }
@@ -198,7 +205,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 250px;
+    height: auto;
     padding: 20px
     }
 
@@ -224,6 +231,7 @@ nav {
     .card-1 {
         background-color: $base-color;
         @include set-padding();
+        @include set-border();
         flex-basis: 25%;
       
     }
@@ -231,12 +239,14 @@ nav {
     .card-2 {
         background-color: $card-base-one;
         @include set-padding();
+        @include set-border();
         flex-basis: 25%;
        
     }
     .card-3 {
         background-color: $card-base-two;
         @include set-padding();
+        @include set-border();
         flex-basis: 25%;
       
     }
@@ -247,6 +257,7 @@ nav {
     background: white;
     padding: 1px;
     @include set-width();
+    @include set-border();
     margin-bottom: 40px;
 
 }
@@ -354,6 +365,7 @@ nav {
         width: 40%;
         text-align: center;
         background: white;
+        @include set-border();
 
         h3 {
             color: black;
@@ -399,6 +411,7 @@ nav {
     .left-section {
        width: 55%;
        @include set-flex();
+       @include set-border();
        background: white;
        flex-wrap: nowrap;
     }
@@ -418,15 +431,16 @@ nav {
 
 
 footer {
-    background: #F4F4F4;
-    height: 300px;
+    background: $base-footer-color;
+    border-top: 1px solid $base-border-color;
+    margin-top: 20px;
+    height: auto;
 }
 
 .footer-container {
-
+    background: $base-footer-color;
     font-size: 1.2rem;
     @include set-width();
-    @include set-margin();
     padding: 5px;
     color: gray;
    
@@ -441,6 +455,9 @@ footer {
     }
     .footer-top-section {
         @include set-flex();
+        .latest_news {
+            width: 40%;
+        }
         li {
             &::before {
                 content: ">";
@@ -451,6 +468,8 @@ footer {
 
     .footer-lower-section {
         @include set-flex();
+        background: #e7e7e7;
+        margin-top: 10px;
       
     }
 
@@ -474,38 +493,94 @@ footer {
    
 }
 
-@media (max-width:1389px) {
-    .services {
-        display: block;
-
-        .right-section,.left-section {
+@media (max-width:1445px) {
+    .about {
+        .right-section {
             height: auto;
-            margin: 0 auto;
-            
         }
-
         .left-section {
-            width: 50%;
-            margin-bottom: 20px;
+            height: auto;
+        }
+    }
+    .projects_container {
+        .card_content {
+            button {
+                padding: 8px;
+            }
+        }
+    }
+}
+
+@media (max-width:1389px)
+{
+ 
+    .services {
+        .left-section {
+            width: fit-content;
         }
 
-        .right-section ul {
-           li {
-               width: 100%;
-               border: none;
-
-               &:last-child {
-                   display: none;
-               }
-           }
-        
+        .right-section {
+            width: fit-content;
         }
     }
 
 }
 
 
+
+
+@media (max-width:1313px) {
+    .services {
+        .left-section {
+            margin-bottom: 2px;
+        }
+
+        .right-section {
+            margin-bottom: 70px;
+        }
+    }
+
+}
+
+@media (max-width:1136px) {
+    .services {
+        .left-section {
+            margin: 0 auto;
+            margin-top: 20px;
+        }
+        .right-section {
+            ul {
+                justify-content: center;
+            }
+        }
+    }
+
+}
+
+
+
 @media (max-width:768px) {
+    .services {
+        display: block;
+
+        .right-section {
+            height: auto;
+
+            ul {
+                li {
+                    width: 100%;
+                    margin-bottom: 0px;
+
+                    &:last-child {
+                        display: none;
+                    }
+                }
+            }
+           
+        }
+    }
+
+
     nav {
         height: auto;
         text-align: center;
@@ -573,4 +648,11 @@ footer {
             width: 100%;
         }
     }
+
+    .about {
+        .right-section {
+            height: auto;
+        }
+    }
+
 }
