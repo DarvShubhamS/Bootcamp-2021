@@ -136,6 +136,11 @@ footer {
     background: #4a5562;
 }
 
+@media (max-width:1368px) {
+    .set-width {
+        width: 95%;
+    }
+}
 
 
 @media (max-width:768px) {
