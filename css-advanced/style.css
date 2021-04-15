@@ -1,0 +1,565 @@
+:root {
+    --base-color:#106EEA;
+    --common-bg:#F6F9FE;
+}
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.set-width{
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    box-shadow: 5px 0px 10px gray;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: white;
+    scroll-margin-top: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 10vh;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    border-bottom: none;
+}
+
+nav a::after {
+    display: block;
+    content: "";
+    width: 0px;
+    height: 3px;
+    background-color: var(--base-color);
+    transition-property: width;
+    transition-duration: 1s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+nav a:active {
+    border-bottom: 1px solid var(--base-color);
+    color: brown;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul:last-child {
+    margin: 0px;
+}
+
+.jumbotron {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.jumbotron::before {
+    content: "";
+    position: absolute;
+    background: url(./assets/hero-bg.jpg);
+    z-index: -1;
+    opacity: 0.4;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron h2 {
+    font-size: 48px;
+}
+
+.jumbotron p {
+    font-size: 24px;
+}
+
+.jumbotron a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.jumbotron a::before {
+    content: url('./assets/icons8-circled-play-48.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+
+.jumbotron button {
+    font-size: 15px;
+    padding: 8px;
+    background: var(--base-color);
+    border:1px solid var(--base-color);
+    color: white;
+    margin-top: 20px;
+}
+
+.jumbotron h2::after {
+    content: " Bizland";
+    color: var(--base-color);
+}
+
+.cards {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+}
+
+.cards-container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+   
+}
+
+.card {
+    position: relative;
+    padding: 15px;
+    flex-basis: 20%;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.card::before {
+    content: "";
+    position:absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+    height: 0%;
+    width: 100%;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function:ease-in-out;
+}
+
+.card:hover {
+   opacity: 1;
+   color: white;
+}
+
+.card:hover::before {
+    background-color: var(--base-color);
+    height: 100%;
+    
+}
+
+#about {
+    background-color: var(--common-bg);
+    color: #444444;
+    height: 80vh;
+}
+
+#about::before {
+    content: "";
+    height: 90px;
+    width: 100%;
+    display: block;
+}
+
+.right-container,.left-container {
+    width: 50%;
+}
+
+.left-container {
+    text-align: center;
+}
+.left-container img {
+    width: 90%;
+    height: 60%;
+}
+
+.right-container {
+    padding: 10px;
+}
+
+.right-container ul{
+    list-style: none;
+    display: inline;
+}
+
+.right-container li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.right-container li:first-child:before {
+    content: url('./assets/shop.JPG');
+    border: 1px solid white;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0px 5px 5px gray;
+   
+}
+
+.right-container li:last-child::before {
+    content: url('./assets/gallery.JPG');
+    border: 1px solid white;
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0px 5px 5px gray;
+}
+
+.right-container h2 {
+    font-size: 26px;
+}
+
+.right-container p {
+    font-size: 1.1rem;
+    margin: 10px 0 30px 0;
+}
+
+
+.top-container {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.top-container h2 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+#about .top-container h2::after {
+    content: " About Us";
+    color: var(--base-color);
+}
+
+.top-container p {
+    margin: 10px 0 20px 0;
+    font-weight: bolder;
+    font-size: 1.1rem;
+   
+}
+
+.top-container button{
+    padding: 10px;
+    width: 100px;
+    font-size: 14px;
+    border-radius: 35px;
+    color: var(--base-color);
+    background-color: #E7F1FD;
+    border: 1px solid #E7F1FD;
+    font-weight: bolder;
+}
+
+.about-content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#services {
+    margin-bottom: 20px;
+}
+
+#services::before {
+    content: "";
+    height: 90px;
+    width: 100%;
+    display: block;
+}
+
+#services .top-container h2::after {
+    content: " Services";
+    color: var(--base-color);
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-bottom: 20px;
+  
+}
+
+.service-card {
+    flex-basis: 30%;
+    transition-property: all;
+    transition-duration: 0.6s;
+    padding: 20px;
+    border: 1px solid #DADCE0;
+    margin-top: 20px;
+}
+
+.service-card img {
+    height: 57px;
+    width: 60px;
+}
+
+.service-card:hover {
+    box-shadow: 0 0 5px 12px var(--common-bg);
+    border: none;
+
+}
+
+.service-card:hover h2 {
+    color: var(--base-color);
+}
+
+.service-card:hover img {
+    border:1px solid var(--base-color);
+}
+
+
+.contact-middle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#contact {
+    background-color: #F9F9F9;
+    padding: 20px;
+    height: auto;
+}
+
+#contact::before {
+    content: "";
+    height: 90px;
+    width: 100%;
+    display: block;
+}
+
+.contact-card {
+    background: white;
+    padding: 20px;
+}
+
+.address {
+    flex-basis: 40%;
+}
+
+.email {
+    flex-basis: 25%;
+}
+
+.call {
+    flex-basis: 25%;
+}
+
+.address::before {
+content: url("./assets/loc.JPG");
+}
+
+.email::before {
+    content: url("./assets/email.JPG");
+}
+
+.call::before {
+    content: url("./assets/contact.JPG");
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.map {
+flex-basis: 45%;
+}
+
+
+.frm {
+    flex-basis: 48%;
+    background: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.frm_top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#subject {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+.frm input {
+    padding: 10px;
+}
+
+textarea{
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.frm button {
+    margin-top: 50px;
+    background: var(--base-color);
+    border: 1px solid var(--base-color);
+    color: white;
+    padding: 10px;
+}
+
+:target {
+    box-shadow: 10px 10px 10px gray;  
+    animation: highlight 1s ease; 
+  }
+  @keyframes highlight {
+    0% 
+    { 
+       width: 0;
+    }
+    100% {  
+       width: 100%;
+    }
+  }
+
+
+@media (max-width:1482px) {
+    iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width:1393px)
+
+{
+    #about  {
+        height: auto;
+    }
+
+    .right-container ul {
+        text-align: center;
+    }
+
+    .right-container ul li{
+     flex-direction: column;
+     
+    }
+
+    .right-container li:first-child:before {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .right-container li:last-child:before {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+ }
+
+
+@media (max-width:768px) {
+    .card {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    #about {
+        height: 100%;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+        text-align: center;
+    }
+    .right-container li:first-child:before {
+        text-align: center;
+       margin: 0 auto;
+       margin-bottom: 10px;
+    }
+    .right-container li:last-child:before {
+        text-align: center;
+       margin: 0 auto;
+       margin-bottom: 10px;
+    }
+
+
+    .service-card {
+        flex-basis: 100%;
+    }
+
+    .address {
+        flex-basis: 100%;
+    }
+    
+    .email {
+        flex-basis: 100%;
+    }
+    
+    .call {
+        flex-basis: 100%;
+    }
+
+    iframe {
+        height: auto;
+        width: auto;
+    }
+    .frm {
+      flex-basis: auto;
+    }
+
+    input[type="text"]
+    {
+        width: 100%;
+    }
+}
+
+
+@media(max-width:375px) {
+    iframe {
+        width: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
