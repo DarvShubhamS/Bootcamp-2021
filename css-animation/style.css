@@ -1,0 +1,553 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* question 1 traffic light */
+
+
+.traffic_main {
+    background: #00BFFF;
+    height: 100vh;
+}
+
+.traffic-light {
+    position: relative;
+    top: 20%;
+    margin: 0 auto;
+    width: 10%;
+    background-color: #3A3A3A;
+    border:5px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#red,#yellow,#green {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    background: black;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    box-shadow: 0px 12px 1px black inset;
+}
+
+#red {
+   animation: rlight 5s none 0s,rlight1 15s none 15s infinite;
+}
+
+#yellow {
+    animation: ylight 5s none 5s,ylight1 15s none 20s infinite;
+}
+
+
+#green {
+    animation: glight 5s none 10s,glight1 15s none 25s infinite;
+}
+
+
+@keyframes rlight {
+    to {
+        background-color: red;
+    }
+}
+
+
+@keyframes ylight {
+    to {
+        background-color: yellow;
+    }
+}
+
+
+@keyframes glight {
+    to {
+        background-color: green;
+    }
+}
+
+
+@keyframes rlight1 {
+    0% {
+        background-color: red;
+    }
+
+    25% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+
+@keyframes ylight1 {
+    0% {
+        background-color: yellow;
+    }
+
+    25% {
+        background-color: yellow;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+
+@keyframes glight1 {
+    0% {
+        background-color: green;
+    }
+
+    25% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: black;
+    }
+
+    100% {
+        background-color: black;
+    }
+}
+
+
+
+
+
+/* question 2 boxes */
+
+.box_main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.box1 {
+    background-color:#FF6D72;
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+}
+
+
+.box2 {
+    background-color: #904AFF;
+    width: 200px;
+    height: 200px;
+    margin: 200px;
+    position: relative;
+    animation: movement 3s none 0s infinite ;
+    animation-direction: alternate;
+
+}
+
+
+
+@keyframes movement {
+   0% {
+       right: 0px;
+   }
+
+
+   50% {
+       opacity: 0.7;
+   }
+
+   100% {
+       right: 800px;
+       opacity: 0.7;
+       transform: rotate(100deg);
+   }
+
+}
+
+
+
+
+/* question 3 heart  */
+
+.heart_main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.heart {
+    width: 180px;
+    height: 200px;
+    background-color: #FF715F;
+    transform: rotate(45deg);
+    position: relative;
+    animation:heartbeat 1s none 1s infinite;
+ 
+   
+}
+
+.heart::before {
+    content: "";
+    width: 180px;
+    height: 200px;
+    background-color: #FF715F;
+    position: absolute;
+    right: 50%;
+    border-radius: 50%;
+}
+
+
+.heart::after {
+    content: "";
+    width: 180px;
+    height: 200px;
+    background-color:#FF715F;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 45%;
+  
+
+    
+}
+
+
+@keyframes heartbeat {
+   0% {
+    transform:rotate(45deg) scale(1.1);
+   }
+
+   20% {
+       transform:rotate(45deg)  scale(1.1);
+   }
+
+   40% {
+       transform:rotate(45deg)  scale(1.2);
+   }
+
+   60% {
+       transform: rotate(45deg) scale(1.1);
+   }
+   
+   100% {
+    transform: rotate(45deg) scale(1.2);
+   }
+
+
+}
+
+
+
+
+/* question 4 stopwatch */
+
+.stopwatch_main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.stopwatch {
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: 20px solid #00D5D8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: clock 8s infinite;
+    animation-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 2s;
+}
+
+.stopwatch_main h2 {
+    margin-top: 30px;
+    color: #00D5D8;
+}
+
+.top_circle {
+    width: 50px;
+    height: 50px;
+    border: 20px solid #00D5D8;
+    border-radius: 50%;
+}
+
+
+.center {
+    width: 40px;
+    height: 40px;
+    background-color: #00D5D8;
+    border-radius: 50%;
+    position: relative;
+}
+
+.center::after {
+    position:absolute;
+    content: "";
+    height: 10px;
+    width: 200px;
+    top: 15px;
+    background-color:#00D5D8;;
+}
+
+
+@keyframes clock {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.stopwatch:hover {
+    animation-play-state: paused;
+}
+
+
+/* question 5 scenario */
+
+.scene_container {
+    height: 80vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.sun {
+    border-radius: 50%;
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    margin:0 auto;
+    z-index: -1;
+    position: relative;
+    animation: sunanimation 10s infinite;
+    animation-direction: alternate-reverse;
+    overflow: hidden;
+}
+
+.clouds {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 70px;
+    opacity: 0.8;
+
+}
+
+.cloud_1 {
+    height: 130px;
+    width: 290px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+    animation: cloud1 10s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+   
+}
+
+.cloud_1::before {
+    content: "";
+    height: 120px;
+    width: 150px;
+    background-color:gray;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 50%;
+    left: 10%;
+}
+
+.cloud_1::after {
+    content: "";
+    height: 110px;
+    width: 110px;
+    background-color:gray;
+    border-radius: 50%;
+    position:absolute;
+    left: 50%;
+    bottom: 34%;
+}
+
+
+.cloud_2 {
+    height: 130px;
+    width: 200px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+    animation: cloud2 10s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    opacity: 0.8;
+   
+}
+
+.cloud_2::before {
+    content: "";
+    height: 90px;
+    width: 90px;
+    background-color:gray;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 60%;
+    left: 5%;
+}
+
+.cloud_2::after {
+    content: "";
+    height: 110px;
+    width: 110px;
+    background-color:gray;
+    border-radius: 50%;
+    position:absolute;
+    left: 35%;
+    bottom: 40%;
+}
+
+
+
+.cloud_3 {
+    height: 130px;
+    width: 400px;
+    background-color: gray;
+    border-radius: 50%;
+    position: relative;
+    animation: cloud3 10s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    opacity: 0.8;
+}
+
+.cloud_3::before {
+    content: "";
+    height: 120px;
+    width: 150px;
+    background-color:gray;
+    border-radius: 50%;
+    position:absolute;
+    bottom: 50%;
+    left: 20%;
+}
+
+.cloud_3::after {
+    content: "";
+    height: 125px;
+    width: 110px;
+    background-color:gray;
+    border-radius: 50%;
+    position:absolute;
+    left: 55%;
+    bottom: 40%;
+}
+
+.hills {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    justify-content: center;
+    z-index: 1;
+
+
+}
+
+.hill_1,.hill_3 {
+    background-color: #3777B9;
+    height: 600px;
+    transform: rotate(45deg);
+    position: relative;
+    width: 700px;
+    top: 70%;
+   
+}
+
+.hill_2 {
+    background-color: #3777B9;
+    height: 400px;
+    width: 400px;
+    position: relative;
+    transform: rotate(45deg);
+    width: 40%;
+    top: 30%;
+   
+}
+
+
+@keyframes sunanimation {
+
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        background-color: orangered;
+        top: 70%;
+        visibility: hidden;
+    }
+}
+
+@keyframes cloud1 {
+    0% {
+        left: -10%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes cloud2 {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+@keyframes cloud3 {
+    0% {
+        right: -10%;
+    }
+
+
+    100% {
+        right: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
