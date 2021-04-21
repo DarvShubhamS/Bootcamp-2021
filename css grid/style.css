@@ -1,0 +1,382 @@
+.pricing button, header .overview button {
+  background-color: #1BC99C;
+  color: white;
+  border: 1px solid #3F8EBD;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  font-weight: 800;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #3F8EBD;
+  color: white;
+}
+header nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav .nav__banner {
+  padding: 10px;
+}
+header nav .nav__banner img {
+  vertical-align: middle;
+}
+header nav a {
+  text-decoration: none;
+  color: white;
+}
+header nav a h2 {
+  display: inline;
+}
+header nav ul {
+  justify-self: end;
+}
+header nav ul li {
+  display: inline;
+  padding: 10px;
+}
+header nav ul li button {
+  background-color: #3F8EBD;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  width: 100px;
+}
+@media only screen and (max-width: 414px) {
+  header nav ul li button {
+    margin-top: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header nav {
+    display: block;
+    text-align: center;
+  }
+}
+header .overview {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+header .overview .overview__button::after {
+  display: block;
+  content: "14-day trial. No fees. No commitment";
+  width: 200px;
+  font-size: 12px;
+  margin-top: 8px;
+}
+@media only screen and (max-width: 768px) {
+  header .overview .overview__button::after {
+    width: 100%;
+    text-align: center;
+  }
+}
+header .overview :nth-child(3) {
+  grid-column: 1/span 2;
+  width: 100%;
+  height: 100%;
+}
+header .overview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 8px;
+}
+@media only screen and (max-width: 768px) {
+  header .overview h1 {
+    font-size: 1.8rem;
+  }
+}
+header .overview h3 {
+  font-weight: lighter;
+}
+@media only screen and (max-width: 768px) {
+  header .overview button {
+    margin-top: 30px;
+  }
+}
+header .overview .overview__heading {
+  justify-self: center;
+}
+@media only screen and (max-width: 768px) {
+  header .overview {
+    display: block;
+    text-align: center;
+  }
+}
+
+.features .features__discovery {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.features .features__discovery h2 {
+  color: #3F444B;
+}
+.features .features__discovery p {
+  color: #9DA1A9;
+  margin-top: 20px;
+}
+.features .features__discovery img {
+  justify-self: center;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .features .features__discovery {
+    display: block;
+    text-align: center;
+    padding: 30px;
+  }
+}
+.features .features__data {
+  background-color: #F3F4F7;
+}
+.features .features__data #graph {
+  height: 100%;
+  width: 100%;
+}
+.features .features__data .features__data_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  align-items: center;
+  height: 300px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.features .features__data .features__data_wrapper :nth-child(3) {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/span2;
+}
+.features .features__data .features__data_wrapper .features__data_content {
+  justify-self: center;
+}
+.features .features__data .features__data_wrapper .features__data_image ::after {
+  content: "See";
+  display: block;
+  margin-left: 55px;
+  height: 100px;
+  width: 100px;
+  color: black;
+}
+@media only screen and (max-width: 768px) {
+  .features .features__data .features__data_wrapper .features__data_image ::after {
+    text-align: center;
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .features .features__data .features__data_wrapper .features__data_image {
+    margin-top: 30px;
+  }
+}
+.features .features__data .features__data_wrapper h2 {
+  font-size: 1.8rem;
+  color: #3F444B;
+  margin-bottom: 20px;
+}
+.features .features__data .features__data_wrapper p {
+  color: #9DA1A9;
+}
+@media only screen and (max-width: 768px) {
+  .features .features__data .features__data_wrapper {
+    padding: 20px;
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+}
+.features .features__performance {
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+.features .features__performance h2 {
+  color: #3F444B;
+  font-size: 1.7rem;
+}
+.features .features__performance p {
+  color: #9DA1A9;
+}
+@media only screen and (max-width: 768px) {
+  .features .features__performance p {
+    margin-bottom: 20px;
+  }
+}
+.features .features__performance img {
+  margin: 20px 0 20px 0;
+}
+@media only screen and (max-width: 768px) {
+  .features .features__performance img {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .features .features__performance {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 20px;
+  }
+}
+
+.blog {
+  background-color: #F3F4F7;
+}
+.blog .blog__content {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+}
+.blog .blog__content :first-child {
+  grid-column: 1/span 3;
+}
+@media only screen and (max-width: 768px) {
+  .blog .blog__content {
+    display: block;
+  }
+}
+.blog h2 {
+  margin-bottom: 40px;
+  color: #3F444B;
+  font-size: 1.8rem;
+}
+.blog img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 10px 10px 15px grey;
+}
+.blog p {
+  font-style: italic;
+}
+.blog p, .blog span {
+  color: #9DA1A9;
+}
+.blog p::after {
+  content: ".";
+  display: block;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #3F8EBD;
+  margin-bottom: 5px;
+}
+.blog #blog__user {
+  border-right: 1px solid #DADCE0;
+  border-left: 1px solid #DADCE0;
+}
+@media only screen and (max-width: 768px) {
+  .blog #blog__user {
+    border: none;
+  }
+}
+.blog article {
+  padding: 10px;
+}
+.blog article span::after {
+  content: ", Taylor Stich";
+  color: #3F8EBD;
+}
+@media only screen and (max-width: 768px) {
+  .blog article {
+    margin-bottom: 40px;
+  }
+}
+
+.pricing {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  padding: 100px;
+  background-color: #3F8EBD;
+}
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .pricing h2 {
+    font-size: 1.5rem;
+  }
+}
+.pricing h3 {
+  color: #92C4E3;
+}
+.pricing button {
+  margin-top: 40px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 50px;
+  height: 200px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer ul li {
+  display: inline;
+}
+footer ul li ::after {
+  content: "  /";
+}
+footer ul a {
+  text-decoration: none;
+  color: #9DA1A9;
+}
+footer .social_media {
+  justify-self: end;
+  text-align: center;
+}
+footer .social_media p {
+  color: #9DA1A9;
+  margin-bottom: 20px;
+}
+footer .social_media a {
+  color: #3F8EBD;
+  text-decoration: none;
+}
+footer .social_media button {
+  background: #FAFAFA;
+  border: 1px solid #DADCE0;
+  padding: 4px;
+}
+footer .social_media button img {
+  height: 15px;
+}
+footer img {
+  vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

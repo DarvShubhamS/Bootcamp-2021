@@ -1,0 +1,456 @@
+@import './variables';
+@import './mixins';
+
+%button-style {
+    background-color: $base-button-color;
+        color: white;
+        border: 1px solid $base-background-color;
+        border-radius: 10px;
+        @include padding(20px);
+        width: 200px;
+        font-weight: 800;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-default;
+}
+
+header {
+
+    background-color: $base-background-color;
+    color: white;
+
+    nav {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        padding: 20px;
+        @include width();
+
+        .nav__banner {
+            padding: 10px;
+            img {
+                vertical-align: middle;
+            }
+        }
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            h2 {
+                display: inline;
+            }
+
+            
+        }
+
+        ul {
+            justify-self: end;
+            li {
+                display: inline;
+                @include padding(10px);
+
+                button {
+                    background-color: $base-background-color;
+                    border: 1px solid white;
+                    color: white;
+                    @include padding(10px);
+                    width: 100px;
+
+                    @include media(414px) {
+                        margin-top: 20px;
+                     }
+                }
+            }
+        }
+
+        @include media(768px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+
+    .overview {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        @include width();
+        padding-top: 50px;
+
+        .overview__button::after {
+            display: block;
+            content: "14-day trial. No fees. No commitment";
+            width: 200px;
+            font-size: 12px;
+            margin-top: 8px;
+
+            @include media(768px) {
+               width: 100%;
+               text-align: center;
+            }
+        }
+
+        :nth-child(3) {   
+            grid-column: 1 / span 2;
+            width: 100%;
+            height: 100%;
+        }
+
+         h1 {
+             font-size: 2.5rem;
+             margin-bottom: 8px;
+
+             @include media(768px) {
+                font-size: 1.8rem;
+             }
+         }
+
+         h3 {
+             font-weight: lighter
+         }
+        button {
+           @extend %button-style;
+           @include media(768px) {
+           margin-top: 30px;
+        }
+           
+        }
+
+        .overview__heading {
+            justify-self: center;
+        }
+
+        @include media(768px) {
+            display: block;
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+.features {
+
+    .features__discovery {
+        display: grid;
+        grid-template-columns: repeat(2,auto);
+        align-items: center;
+        @include width();
+        
+        h2 {
+            color: $base-header-color;
+        }
+
+        p {
+            color: $base-font-color;
+            margin-top: 20px;
+        }
+
+        img {
+            justify-self: center;
+            margin-top: 40px;
+        }
+
+        @include media(768px) {
+            display: block;
+            text-align: center;
+            @include padding(30px);
+        }
+        
+    }
+
+
+    .features__data {
+        background-color: $base-second-background-color;
+
+        #graph {
+            height: 100%;
+            width: 100%;
+        }
+        .features__data_wrapper {
+            display: grid;
+            grid-template-columns: repeat(2,auto);
+            align-items: center;
+            height: 300px;
+            @include width();
+    
+            :nth-child(3) {
+                width: 100%;
+                height: 100%;
+                grid-column: 1 / span2;
+            }
+
+            .features__data_content {
+                justify-self: center;
+            }
+
+
+
+            .features__data_image {
+            
+                ::after {
+                    content: "See";
+                    display: block;
+                    margin-left: 55px;
+                    height: 100px;
+                    width: 100px;
+                    color: black;
+    
+                    @include media(768px) {
+                        text-align: center;
+                        margin-left: 0px;
+                    }
+                }
+
+                @include media(768px) {
+                    margin-top: 30px;
+                 }
+
+            }
+
+
+           
+
+            h2 {
+                font-size: 1.8rem;
+                color: $base-header-color;
+                margin-bottom: 20px;
+            }
+
+            p {
+                color: $base-font-color;
+            }
+
+
+            @include media(768px) {
+                @include padding(20px);
+                display: block;
+                height: auto;
+                text-align: center;
+            }
+
+        }
+    }
+
+
+
+    .features__performance {
+        text-align: center;
+        @include width();
+        @include padding(100px);
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+
+        h2 {
+            color: $base-header-color;
+            font-size: 1.7rem;
+        }
+
+        p {
+            color: $base-font-color;
+
+            @include media(768px)
+            {
+                margin-bottom: 20px;
+            }
+        }
+
+        img {
+            margin: 20px 0 20px 0;
+
+            @include media(768px) {
+               width: 300px;
+             }
+        }
+
+
+        @include media(768px) {
+           grid-template-columns: repeat(1,1fr);
+           @include padding(20px)
+        }
+    }
+
+
+
+}
+
+
+.blog {
+    background-color: $base-second-background-color;
+    .blog__content {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 1rem;
+        text-align: center;
+        @include width();
+        @include padding(100px);
+        
+        :first-child {
+            grid-column: 1 / span 3;
+        }
+
+        @include media(768px) {
+           display: block;
+        }
+    
+    }
+
+    h2 {
+        margin-bottom: 40px;
+        color: $base-header-color;
+        font-size: 1.8rem;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 15px grey;
+    }
+
+    p {
+        font-style: italic;
+    }
+
+    p,span {
+        color: $base-font-color;
+    }
+
+    p::after {
+    content: ".";
+    display: block;
+    font-weight: bold;
+    font-size: 2rem;
+    color: $base-background-color;
+    margin-bottom: 5px;
+    }
+
+    #blog__user {
+        border-right: 1px solid $base-border;
+        border-left: 1px solid $base-border;
+
+        @include media(768px) {
+            border: none;
+         }
+        
+    }
+
+    article {
+        padding:10px;
+        span::after {
+            content: ", Taylor Stich";
+            color: $base-background-color;
+        }
+        
+        @include media(768px) {
+            margin-bottom: 40px;
+         }
+    }
+    
+    
+   
+   
+}
+
+
+
+.pricing {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    color: white;
+    @include padding(100px);
+    background-color: $base-background-color;
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 5px;
+
+        @include media(768px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    h3 {
+        color: #92C4E3;
+    }
+
+    button {
+        margin-top: 40px;
+        @extend %button-style;
+    }
+}
+
+footer {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    @include padding(50px);
+    height: 200px;
+    @include width();
+    ul {
+        li {
+            display:inline;
+            
+            ::after {
+                content: "  /";
+               
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: $base-font-color;
+        }
+
+
+    }
+
+
+    .social_media {
+        justify-self: end;
+        text-align: center;
+        p {
+            color: $base-font-color;
+            margin-bottom: 20px;
+        }
+
+        a {
+            color: $base-background-color;
+            text-decoration: none;
+        }
+
+        button {
+            background: #FAFAFA;
+            border: 1px solid $base-border;
+            padding: 4px;
+
+            img {
+                height: 15px;
+            }
+        }
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+
+    @include media(768px) {
+        display: block;
+        text-align: center;
+    }
+
+    
+}

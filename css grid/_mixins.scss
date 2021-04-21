@@ -1,0 +1,14 @@
+@mixin padding($value) {
+    padding: $value;
+}
+
+@mixin width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin media($width) {
+    @media only screen and (max-width: $width) {
+      @content;
+    }
+  }
