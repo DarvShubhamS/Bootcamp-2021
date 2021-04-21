@@ -31,7 +31,7 @@ header {
         display: grid;
         grid-template-columns: repeat(2,1fr);
         align-items: center;
-        padding: 20px;
+        @include padding(20px);
         @include width();
 
         .nav__banner {
