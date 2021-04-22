@@ -43,6 +43,22 @@ header nav a {
 header nav a h2 {
   display: inline;
 }
+header nav #ham {
+  display: none;
+  border-radius: 50%;
+  background-color: #1BC99C;
+}
+header nav #ham img {
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+@media only screen and (max-width: 768px) {
+  header nav #ham {
+    display: block;
+    margin: 0 auto;
+  }
+}
 header nav ul {
   justify-self: end;
 }
@@ -63,10 +79,35 @@ header nav ul li button {
   }
 }
 @media only screen and (max-width: 768px) {
+  header nav ul {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
   header nav {
     display: block;
     text-align: center;
   }
+}
+header #sidebar {
+  margin: 0;
+  padding-top: 0;
+  width: 100%;
+  background-color: #6cc092;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  font-size: 1.1rem;
+  display: none;
+  top: 0;
+  left: 0;
+}
+header #sidebar #sidebar__nav {
+  display: block;
+}
+header #sidebar #sidebar__nav li {
+  display: block;
+  text-align: center;
 }
 header .overview {
   display: grid;
@@ -117,6 +158,7 @@ header .overview .overview__heading {
   header .overview {
     display: block;
     text-align: center;
+    padding-top: 0;
   }
 }
 

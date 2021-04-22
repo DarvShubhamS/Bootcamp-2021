@@ -41,7 +41,47 @@
                     <button>Log in</button>
                 </li>
             </ul>
+
+            <!-- sidebar menu  -->
+
+            <aside id="sidebar">
+                <ul id="sidebar__nav">
+                    <li>
+                        <a href="/">Homepage</a>
+                    </li>
+
+                    <li>
+                        <a href="">Features</a>
+                    </li>
+
+                    <li>
+                        <a href="">Plans&Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="">Blog</a>
+                    </li>
+
+                    <li>
+                        <button>Log in</button>
+                    </li>
+
+                    <li>
+                        <a id="sidebar__close" onclick="side_close()">X</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <!-- ham icon visible on mobile devices -->
+
+            <button id="ham" onclick="side_open()">
+                <img src="./assets/hamburger.png" alt="">
+            </button>
+
         </nav>
+
+
+
 
         <section class="overview">
 
@@ -223,6 +263,21 @@
         </div>
 
     </footer>
+
+    <!-- function for opening and closing ham icon -->
+
+    <script>
+        const side_open = () => {
+            document.getElementById("ham").style.opacity = "0"
+            document.getElementById("sidebar").style.display = "block"
+        }
+
+        const side_close = () => {
+            document.getElementById("sidebar").style.display = "none"
+            document.getElementById("ham").style.opacity = "1"
+
+        }
+    </script>
 
 </body>
 

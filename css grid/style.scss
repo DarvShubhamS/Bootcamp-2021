@@ -52,6 +52,21 @@ header {
             
         }
 
+        #ham {
+            display: none;
+            border-radius: 50%;
+            background-color: $base-button-color;
+            img {
+                height: 40px;
+                width: 40px;
+                vertical-align: middle;
+            }
+            @include media(768px) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
         ul {
             justify-self: end;
             li {
@@ -70,6 +85,10 @@ header {
                      }
                 }
             }
+
+            @include media(768px) {
+                display: none;
+            }
         }
 
         @include media(768px) {
@@ -78,6 +97,29 @@ header {
         }
     }
 
+    #sidebar {
+        margin: 0;
+        padding-top: 0;
+        width: 100%;
+        background-color: #6cc092;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+        font-size: 1.1rem;
+        display: none;
+        top: 0;
+        left: 0;
+
+        #sidebar__nav {
+            display: block;
+            li {
+                display: block;
+                text-align: center;
+            }
+        
+    }
+
+    }
 
     .overview {
         display: grid;
@@ -131,6 +173,7 @@ header {
         @include media(768px) {
             display: block;
             text-align: center;
+            padding-top: 0;
         }
     }
 
